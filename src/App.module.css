@@ -1,6 +1,13 @@
-.button{
-    color: white;
+.Btn{
+    color: rgb(255, 255, 255);
+    width: 10%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: snow;
+    background-color: transparent;
+    transition: background-color 0.3s ease 0s;
 }
-.button:hover{
-    background-color: rgb(255, 166, 0);
+.Btn:hover{
+    background-color:orange;
 }
