@@ -1,9 +1,14 @@
 import { useState } from "react";
 import style from "./App.module.css";
+import Search from './components/Search'
 import { Container } from "@mui/material";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const handleSearch = () => {
+    <Search/>
+  }
 
   return (
     <>
@@ -47,9 +52,9 @@ function App() {
                 width: "12%",
               }}
             >
-              <img src="/image/search.png" style={{ width: "16%" }} alt="" />
-              <img src="/image/user.png" style={{ width: "16%" }} alt="" />
-              <img src="/image/cart.png" style={{ width: "16%" }} alt="" />
+              <img onClick={handleSearch} src="/image/search.png" style={{ width: "16%" }} alt="search" />
+              <img src="/image/user.png" style={{ width: "16%" }} alt="user" />
+              <img src="/image/cart.png" style={{ width: "16%" }} alt="cart" />
             </div>
           </div>
           <div style={{ color: "white", fontFamily: "math", width: "50%" }}>
