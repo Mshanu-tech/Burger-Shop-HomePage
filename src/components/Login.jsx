@@ -21,7 +21,7 @@ export default function Login({ onClose, isOpen }) {
       aria-describedby="modal-modal-description"
     >
       <div className={style.login}>
-        <h1 style={{ color: "white", marginTop:"60px" }}>Login Page</h1>
+        <h1 style={{ color: "white" }}>Login Page</h1>
         <form onSubmit={handleSubmit} className={style.form}>
           <TextField
             sx={{ width: "70%" }}
