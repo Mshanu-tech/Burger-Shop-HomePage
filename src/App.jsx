@@ -4,11 +4,20 @@ import Search from './components/Search'
 import { Container } from "@mui/material";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const handleSearch = () => {
-    <Search/>
+    console.log("search");
+    setIsSearchOpen(true);
   }
+
+  const handleCloseSearch = () => {
+    setIsSearchOpen(false);
+  }
+  // const handleSearch = () => {
+  //   console.log("search");
+  //   <Search/>
+  // }
 
   return (
     <>
@@ -88,6 +97,7 @@ function App() {
           </div>
         </Container>
       </div>
+      {isSearchOpen && <Search onClose={handleCloseSearch} />}
     </>
   );
 }
