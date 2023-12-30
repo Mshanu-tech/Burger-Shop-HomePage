@@ -1,0 +1,16 @@
+.form{
+    width: 33%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 35px;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

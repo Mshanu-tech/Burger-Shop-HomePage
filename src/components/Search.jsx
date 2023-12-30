@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { styled, alpha } from '@mui/material';
-import Typography from '@mui/material/Typography';
 import SearchIcon from "@mui/icons-material/Search";
 import Modal from '@mui/material/Modal';
 import InputBase from "@mui/material/InputBase";

@@ -1,23 +1,25 @@
 import { useState } from "react";
 import style from "./App.module.css";
 import Search from './components/Search'
+import Login from './components/Login'
 import { Container } from "@mui/material";
 
 function App() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [ userLogin, setUserLogin] = useState(false)
 
   const handleSearch = () => {
-    console.log("search");
     setIsSearchOpen(true);
   }
 
   const handleCloseSearch = () => {
     setIsSearchOpen(false);
   }
-  // const handleSearch = () => {
-  //   console.log("search");
-  //   <Search/>
-  // }
+
+
+  const handleLogin = () => {
+    setUserLogin(true)
+  }
 
   return (
     <>
@@ -62,7 +64,7 @@ function App() {
               }}
             >
               <img onClick={handleSearch} src="/image/search.png" style={{ width: "16%", cursor:"pointer" }} alt="search" />
-              <img onClick={handleSearch} src="/image/user.png" style={{ width: "16%", cursor:"pointer" }} alt="user" />
+              <img onClick={handleLogin} src="/image/user.png" style={{ width: "16%", cursor:"pointer" }} alt="user" />
               <img src="/image/cart.png" style={{ width: "16%" }} alt="cart" />
             </div>
           </div>
@@ -98,6 +100,8 @@ function App() {
         </Container>
       </div>
       {isSearchOpen && <Search onClose={handleCloseSearch} />}
+      {userLogin && <Login onClose={() => setUserLogin(false)} isOpen={userLogin} />}
+
     </>
   );
 }
