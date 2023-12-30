@@ -8,25 +8,19 @@ import InputBase from "@mui/material/InputBase";
 
 const style = {
   position: 'absolute',
-  top: '50%',
+  top: '25%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  // width: 400,
   boxShadow: 24,
-  p: 4,
+  // p: 4,
 };
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
   backgroundColor: "white",
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
   marginLeft: 0,
-  width: "34%",
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(1),
     width: "auto",
@@ -45,7 +39,6 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "black",
   width: "100%",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
@@ -53,12 +46,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create("width"),
     borderBottom: "2px solid transparent", // Add transparent underline
     "&:focus": {
-      borderBottomColor: "black", // Change the underline color on focus
     },
     [theme.breakpoints.up("sm")]: {
-      width: "12ch",
+      width: "24ch",
       "&:focus": {
-        width: "13ch",
+        width: "28ch",
       },
     },
   },

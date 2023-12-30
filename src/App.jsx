@@ -61,8 +61,8 @@ function App() {
                 width: "12%",
               }}
             >
-              <img onClick={handleSearch} src="/image/search.png" style={{ width: "16%" }} alt="search" />
-              <img src="/image/user.png" style={{ width: "16%" }} alt="user" />
+              <img onClick={handleSearch} src="/image/search.png" style={{ width: "16%", cursor:"pointer" }} alt="search" />
+              <img onClick={handleSearch} src="/image/user.png" style={{ width: "16%", cursor:"pointer" }} alt="user" />
               <img src="/image/cart.png" style={{ width: "16%" }} alt="cart" />
             </div>
           </div>
